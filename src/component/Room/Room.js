@@ -1,42 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import useRoom from '../../hooks/useRoom';
 import icon from '../../images/icon-accmod.png'
 import About from '../About/About';
 import './Room.css'
 const Room = () => {
-    const rooms = [
-        {
-            img: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60',
-            id: 1,
-            room: 'Family Room '
-        },
-        {
-            img: 'https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            id: 2,
-            room: 'Couple Room'
-        },
-        {
-            img: 'https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            id: 3,
-            room: 'Standard Room',
+    const [rooms,setRoom]=useRoom()
 
-        },
-        {
-            img: 'https://images.unsplash.com/photo-1631049552057-403cdb8f0658?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-            id: 4,
-            room: 'Luxury Room'
-        },
-        {
-            img: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
-            id: 5,
-            room: 'Standard Room'
-        },
-        {
-            img: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-            id: 6,
-            room: 'Standard Room'
-        }
-    ]
     return (
         <div>
             <Container>

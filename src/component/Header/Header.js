@@ -16,29 +16,31 @@ const Header = () => {
     console.log(open)
     const handleOpen = () => setOpen(!open)
     return (
-        <div className='header'>
-            <header className='container d-flex justify-content-between align-items-center' >
-                <div className="logo">
-                    <img src={logo} alt="" />
-                </div>
-                <nav>
-                    <ul  className={`d-xl-flex align-items-center ${open ? 'ul':'menu'}`}>
-                        {links.map(link => <li key={link.id}>
-                            <NavLink
-                                className='nav'
-                                key={link.id}
-                                to={link.path}
-                            >{link.name}</NavLink>
-                        </li>)
+        <div className='sticky-header'>
+            <div className='header'>
+                <header className='container d-flex justify-content-between align-items-center' >
+                    <div className="logo">
+                        <img src={logo} alt="" />
+                    </div>
+                    <nav>
+                        <ul className={`d-xl-flex align-items-center ${open ? 'ul' : 'menu'}`}>
+                            {links.map(link => <li key={link.id}>
+                                <NavLink
+                                    className='nav'
+                                    key={link.id}
+                                    to={link.path}
+                                >{link.name}</NavLink>
+                            </li>)
+                            }
+                        </ul>
+                    </nav>
+                    <div onClick={handleOpen} className='icon'>
+                        {
+                            open ? <XIcon className='menu-icon' /> : <MenuAlt1Icon className='menu-icon' />
                         }
-                    </ul>
-                </nav>
-                <div onClick={handleOpen} className='icon'>
-                    {
-                        open ? <XIcon className='menu-icon' /> : <MenuAlt1Icon className='menu-icon' />
-                    }
-                </div>
-            </header>
+                    </div>
+                </header>
+            </div>
         </div>
     );
 };

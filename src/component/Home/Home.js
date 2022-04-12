@@ -5,6 +5,7 @@ import hotel2 from '../../images/hotel2.jpg'
 import hotel3 from '../../images/hotel3.jpg'
 import { Carousel } from 'react-bootstrap';
 import Room from '../Room/Room';
+import Testomonial from '../Testomonial/Testomonial';
 const Home = () => {
 
     return (
@@ -58,6 +59,9 @@ const Home = () => {
         </div>
         <section>
             <Room/>
+        </section>
+        <section>
+            <Testomonial/>
         </section>
         </div>
     );
