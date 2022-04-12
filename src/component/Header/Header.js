@@ -23,7 +23,7 @@ const Header = () => {
                 </div>
                 <nav>
                     <ul  className={`d-xl-flex align-items-center ${open ? 'ul':'menu'}`}>
-                        {links.map(link => <li>
+                        {links.map(link => <li key={link.id}>
                             <NavLink
                                 className='nav'
                                 key={link.id}
