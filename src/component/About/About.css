@@ -1,0 +1,38 @@
+.about-img{
+    width: 47%;
+}
+.about-details{
+    width: 45%;
+}
+.about-details h1{
+    border-bottom: .2rem solid goldenrod;
+    display: inline-block;
+    padding-bottom: .6rem;
+    margin-bottom: 1rem;
+}
+.about-details p{
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+}
+.about-details button{
+    border: .3rem solid gray;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    transition: .3s all;
+}
+.about-details button:hover{
+    background-color:goldenrod;
+    color: #fff;
+    border: .3rem solid goldenrod;
+}
+@media screen and (max-width:768px){
+    .about-img{
+        width: 100%;
+    }
+    .about-details{
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import icon from '../../images/icon-accmod.png'
+import About from '../About/About';
 import './Room.css'
 const Room = () => {
     const rooms = [
@@ -50,8 +51,8 @@ const Room = () => {
                 <div className='grid '>
                     <Row className='g-5'>
                         {
-                            rooms.map(room => <Col md={4}>
-                                <div key={room.id} className='room'>
+                            rooms.map(room => <Col key={room.id} md={4}>
+                                <div className='room'>
                                     <img className='room-img' src={room.img} alt="room images" />
                                     <div>
                                         <button className='room-btn'>{room.room} <span className='price'>$320<small className='room-price'>/days</small></span></button>
@@ -61,6 +62,9 @@ const Room = () => {
                         }
                     </Row>
                 </div>
+                <section>
+                    <About/>
+                </section>
             </Container>
         </div>
     );
