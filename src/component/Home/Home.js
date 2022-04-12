@@ -4,10 +4,12 @@ import hotel1 from '../../images/hotel1.jpg'
 import hotel2 from '../../images/hotel2.jpg'
 import hotel3 from '../../images/hotel3.jpg'
 import { Carousel } from 'react-bootstrap';
+import Room from '../Room/Room';
 const Home = () => {
 
     return (
-        <div className='home'>
+        <div>
+            <div className='home'>
             <Carousel fade>
                 <Carousel.Item className='slider'>
                     <img
@@ -53,6 +55,10 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+        </div>
+        <section>
+            <Room/>
+        </section>
         </div>
     );
 };

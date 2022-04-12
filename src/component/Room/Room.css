@@ -1,0 +1,44 @@
+
+.room-header{
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+}
+.room{
+    height: 30rem;
+    position: relative;
+  
+    overflow: hidden;
+}
+.room-btn{
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    background:rgba(0,0,0,0.4);
+    height: 3rem;
+    padding: 2.5rem 2rem ;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.price {
+    font-size: 2.3rem;
+}
+.room-price{
+    color: rgb(238, 176, 132);
+    margin-left: 1rem;
+}
+.room img{
+    width: 100%;
+    height: 100%;
+    transition: .3s all;
+}
+.room:hover .room-img{
+    transform: scale(1.1);
+}
